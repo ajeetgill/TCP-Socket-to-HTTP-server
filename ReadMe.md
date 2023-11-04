@@ -40,13 +40,13 @@ Running the Provided Server, open terminal and type :
 
   <small>running TCPServer.py/TCPClient.py file will run server/client respectively</small>
 
-#### FOR BASIC SERVER <small>Files provided in Repo</small> <hr>
+#### FOR BASIC SERVER <small>Files provided in Repo</small>
 
 - run server and client both are running.
 - Sending some text(e.g. `test-text`) from client-temnial should output `TEST-TEXT` on the client-terminal.
   <br>Meanwhile the server-terminal should print `Requested Text: test-text`<br>
 
-#### FOR HTTP-WEB-SERVER <hr />
+#### FOR HTTP-WEB-SERVER
 
 UPPERCASE-transformation shouldn't be working anymore.
 
