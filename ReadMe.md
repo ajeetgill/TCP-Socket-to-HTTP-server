@@ -3,7 +3,7 @@
 **[Original Full Question/Task Link](https://github.com/ajeetgill/http-server-tcp-socket-python#http-server-development-with-sockets---python)**
 
 This is built on top of a project which you can find at the above provided link <br>OR <br>
-in branch named `tcp-http-get-server` in present github repo.
+in branch named `0-tcp-http-get-serve` in present github repo.
 
 ## Test if working
 
