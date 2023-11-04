@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex</title>
+
+    <style>
+      .container {
+        display: flex;
+        background-color: #2196f3;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      .item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      body {
+        max-width: 750px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+      }
+
+      table,
+      table * {
+        box-sizing: border-box;
+        border: 1px solid black;
+        padding: 0.5rem;
+        max-width: 500px;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>The CSS-Flex wrap Property</h1>
+
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+
+    <h2>A basic HTML table</h2>
+
+    <table style="width: 100%">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+
+    <p style="text-align: center">
+      Right-click and use<br />
+      <strong> <code>Inspect Element (Mac shortcut : CMD+Shift+C</code></strong
+      ><br />
+      to get familiar with flex (especially flex-wrap)
+    </p>
+    <a
+      style="
+        width: max-content;
+        text-decoration-line: none;
+        padding: 1rem;
+        border: 1px solid black;
+        display: inline-block;
+        border-radius: 14px;
+        align-self: start;
+      "
+      href="index.html"
+      >👈 BACK</a
+    >
+  </body>
+</html>

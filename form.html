@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <style>
+    body {
+      max-width: 750px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+
+  <body>
+    <h2>HTML Forms</h2>
+
+    <form method="post" action="http://localhost:8000">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      If you click the "Submit" button, the form-data will be sent to the
+      server. The server will return some https code - which has variables
+      {{fname}} - {{lname}} - which will be replaced by the values you entered
+      in the form.
+    </p>
+    <p>
+      The returned page is <code>success.html</code>, which can't be accessed
+      directly. It is shown only on form submission.
+    </p>
+    <a
+      style="
+        width: max-content;
+        padding: 1rem;
+        text-decoration-line: none;
+        border: 1px solid black;
+        text-align: center;
+        display: inline-block;
+        border-radius: 14px;
+        align-self: flex-start;
+      "
+      href="index.html"
+      >👈 BACK</a
+    >
+  </body>
+</html>
