@@ -13,7 +13,52 @@
   - send and receive a HTTP packet
 - get familiar with HTTP request/response format.
 
-### Deliverables : Web Server : `TCPServer.py`
+## Provided Files
+
+Test files are provided, and they should be put in the same directory that the server is in.
+
+- TCPServer.py
+  - this is a simple socket server in which the request message is any text line, and the response is the same text line but all letters are in upper case.
+- TCPClient.py
+  - a simple socket server in which the request message is any text line, and the response is the same text line but all letters are in upper case.
+- index.html, flex.html - just to check that different routes are indeed working we will be using `form.html` later on. But
+- form.html - as of now it's just to check (like flex.html)
+  - other-git-branches : we will modify the server to handle POST requests
+  - other-git-branches : return a templated-html(`success.html`) page populated from POST request response
+  - other-git-branches : make the `success.html` be only accessible via form submission on `form.html`, visiting `success.html` directly will redirect to `form.html` with warning-text
+- .gitignore : you don't need to worry about this file. It's a hidden file which has a lit of all the files we've asked git to not track. E.g.
+  - after adding `test*.py` to .gitignore file
+  - now anything which starts with `test` and ends with `.py` will not be tracked by git
+  - To test this - make a file called `test.py` or `testanything.py`, as long as the name starts with `test` and ends with `.py`
+  - Notice: how git will not include it as part of files to commit
+
+## Test if working
+
+Running the Provided Server, open terminal and type :
+
+- `python3 file_name.py`
+
+  <small>running TCPServer.py/TCPClient.py file will run server/client respectively</small>
+
+#### FOR BASIC SERVER <small>Files provided in Repo</small> <hr>
+
+- run server and client both are running.
+- Sending some text(e.g. `test-text`) from client-temnial should output `TEST-TEXT` on the client-terminal.
+  <br>Meanwhile the server-terminal should print `Requested Text: test-text`<br>
+
+#### FOR HTTP-WEB-SERVER <hr />
+
+UPPERCASE-transformation shouldn't be working anymore.
+
+Run the server file, but for client - your **_Web-Browser_** is the client <br>TCPClient.py file isn't needed anymore at this point.
+
+Open a browser, and type in the request : http://localhost:8000/index.html
+
+All the test files should be successfully retrieved from the server.
+
+> 💡Pro-tip : don't forget to close the things you open ;)
+
+## Deliverables : Web Server : `TCPServer.py`
 
 > **_We assume no header lines are involved._**
 
@@ -44,46 +89,6 @@ You may expand the TCPServer.py provided in the github repo to implement the Web
 >     - similar to [VS-Code Live server (Readme)](https://github.com/tapio/live-server#readme)
 >   - try making it accesible via internet (using ngrok)
 >   - hosting it on a live URL accesible from anywhere on the internet.
-
-## Provided Files
-
-Test files are provided, and they should be put in the same directory that the server is in.
-
-- TCPServer.py
-  - this is a simple socket server in which the request message is any text line, and the response is the same text line but all letters are in upper case.
-- TCPClient.py
-  - a simple socket server in which the request message is any text line, and the response is the same text line but all letters are in upper case.
-- index.html, flex.html - just to check that different routes are indeed working we will be using `form.html` later on. But
-- form.html - as of now it's just to check (like flex.html)
-  - other-git-branches : we will modify the server to handle POST requests
-  - other-git-branches : return a templated-html(`success.html`) page populated from POST request response
-  - other-git-branches : make the `success.html` be only accessible via form submission on `form.html`, visiting `success.html` directly will redirect to `form.html` with warning-text
-
-## Test if working
-
-Running the Provided Server, open terminal and type :
-
-- `python3 file_name.py`
-
-  <small>running TCPServer.py/TCPClient.py file will run server/client respectively</small>
-
-#### FOR BASIC SERVER <small>Files provided in Repo</small> <hr>
-
-- run server and client both are running.
-- Sending some text(e.g. `test-text`) from client-temnial should output `TEST-TEXT` on the client-terminal.
-  <br>Meanwhile the server-terminal should print `Requested Text: test-text`<br>
-
-#### FOR HTTP-WEB-SERVER <hr />
-
-UPPERCASE-transformation shouldn't be working anymore.
-
-Run the server file, but for client - your **_Web-Browser_** is the client <br>TCPClient.py file isn't needed anymore at this point.
-
-Open a browser, and type in the request : http://localhost:8000/index.html
-
-All the test files should be successfully retrieved from the server.
-
-> 💡Pro-tip : don't forget to close the things you open ;)
 
 ## Additional Information
 
