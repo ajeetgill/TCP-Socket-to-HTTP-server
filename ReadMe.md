@@ -36,3 +36,9 @@ TCPServer.py, requirements met:
 - If file is sent - a 200 response message should be sent back
 - If file does not exist - a 404 response message should be sent back
 - If any other error occurs - a 404 response message should be sent back
+
+## Coming up next,
+
+Basically the next thing we're gonna do to upgrade our server.
+
+- [ ] handle form submission on `form.html` - POST request
