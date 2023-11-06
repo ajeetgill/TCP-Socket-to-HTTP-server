@@ -84,6 +84,7 @@ You may expand the TCPServer.py provided in the github repo to implement the Web
 >   - this is also a template webpage - which substitute {{fname}} with data from form submission
 >
 > - [ ] gotta look into it
+>   - serve images, CSS & Js file as well (that would involve headers & MIME types)
 >   - multiple http connections
 >   - technically, adding hot-reloading capability is a possibility
 >     - similar to [VS-Code Live server (Readme)](https://github.com/tapio/live-server#readme)
