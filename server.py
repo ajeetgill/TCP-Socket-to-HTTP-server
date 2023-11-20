@@ -18,11 +18,20 @@ def parse_form_data(form_data):
 
 # get_content_length : returns the content length from the request headers
 def get_content_length(request):
-    for line in request.split('\r\n'):
+     """
+     Extracts the content length from the HTTP request.
+
+     Args:
+          request (str): The HTTP request.
+
+     Returns:
+          int or None: The content length if found, None otherwise.
+     """
+     for line in request.split('\r\n'):
         if line.startswith('Content-Length: '):
             content_length = int(line.split(': ')[1])
             return content_length
-    return None
+     return None
 
 
 # returns the request based on if it was GET or POST request

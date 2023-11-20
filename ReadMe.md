@@ -24,5 +24,8 @@ Open a browser, and type in the request : http://localhost:8000/index.html
 
 ## Further ideas to expand -
 
+- [ ] Make `success.html` inaccessible, people can visit it only after submitting form
+  - [ ] when returning different data than requested - make sure the address bar in browser shows correct url (can be done w/ js OR server)
+  - [ ] if using js to change url-navigation, then delete the js block
 - [ ] POST request should be processed only if coming from `form.html`
 - [ ] `/api`/ route - which return different data [GET and POST]
