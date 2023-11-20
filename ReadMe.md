@@ -5,7 +5,9 @@
 > 2023F CS-3420-01-Assignment 2
 > HTTP Server Development
 
-### Objectives
+## Objectives
+
+> 🎯 Check `final-server` branch for final result - will be working towards it incrementally
 
 - learn and practice the basics of socket programming for TCP connections in Python
   - how to create a socket,
