@@ -1,10 +1,5 @@
 # HTTP Server Development with sockets - python
 
-**AssignmentLvl1.md**
-
-> 2023F CS-3420-01-Assignment 2
-> HTTP Server Development
-
 ## Objectives
 
 > 🎯 Check `final-server` branch for final result - will be working towards it incrementally
@@ -115,5 +110,8 @@ Run the server program. This server and the client may be in different hosts. He
 <hr>
 
 ### Credit :
+
+> 2023F CS-3420-01-Assignment 2
+> HTTP Server Development
 
 The original question was part of an assignment provided by [UPEI : Professor : Yingwei Wang](http://www.csit.upei.ca/~ywang/). I've changed it extensively and built on top of it. The original assignemt was just a simple http-get-server, but I messed around a bit, to see if I can make POST server and kept adding different capabilities.
