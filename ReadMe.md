@@ -29,3 +29,4 @@ Open a browser, and type in the request : http://localhost:8000/index.html
   - [ ] if using js to change url-navigation, then delete the js block
 - [ ] POST request should be processed only if coming from `form.html`
 - [ ] `/api`/ route - which return different data [GET and POST]
+- [ ] the basic tcp-server & client - try connecting multiple clients to same server
